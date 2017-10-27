@@ -1,43 +1,35 @@
-# Site Settings
-title: Jekflix | A theme for Jekyll
-email: youremail@xyz.com
-description: Some text about your blog.
-baseurl: "/jekflix-template" # the subpath of your site, e.g. /blog
-url: "https://www.rossener.com" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
+title: Your Title
+description: > # this means to ignore newlines until "baseurl:"
+  Your description
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "Your-Link.github.io" # the base hostname & protocol for your site
+# Build settings
+markdown: kramdown
 
-# User Settings
-username: Jekflix
-user_description: Some text about you.
-disqus_username: disqus_username
+facebook:
+  app_id: 
 
-# Social Media
-# Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+logo: "../css/2016_style/img/icon-large.png"
+
+social: 
+  name: Your Facebook Page
+  link: "https://www.facebook.com/"
+
+google_site_verification: googleXXXXXXXXXXXXXXXX.html
+
+include: ['_2016_pages', '_2017_pages']
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: facebook
+    url: https://www.facebook.com
+  - title: twitter
+    url: https://twitter.com
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
-permalink: /:title/
-
-# Plugins
-gems:
-  - jemoji
-
-# Links to include in menu navigation
-# For external links add external: true
-links:
-  - title: Home
-    url: /
-  - title: About
-    url: /about/
-  - title: Contact
-    url: /contact/
-
-# Exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
+permalink: pretty
