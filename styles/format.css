@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	margin: 50px auto;
+	border-collapse: collapse;
+	/*border: solid 1px #404040;*/
+}
+
+td, th {
+	border: solid 1px #D7D5DD;
+	padding: 0.4em;
+	width: 10em;
+}
+
+th {
+	background-color: #6BAFE7;
+	font: bold italic 1em Helvetica, sans-serif;
+	color: #F7F7F7;
+}
+
+caption {
+	font: bold normal 1.5em/1.7em Helvetica, sans-serif;
+	color: #1C82DE;
+	text-align: center;
+}
+
+tr {
+	background-color: #FAFAFA;
+}
+
+.odd {
+	background-color: #eeeeee;
+}
