@@ -1,0 +1,271 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+	line-height: 1.5;
+	background-color: #efefef;
+}
+
+article {
+	width: 50em;
+	margin: 0 auto 2em;
+	padding: 2em 5em;
+	background-color: #eaeaea;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1;
+	margin: 1em 0;
+}
+
+header {
+	background-color: #334;
+}
+
+#logo {
+	background-image: url("../images/guitarist.gif");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-color: #333344;
+	text-align: center;
+	margin: 0 20%;
+}
+
+#home #logo {
+	background-image: url("../images/guitarist.gif");
+}
+#about #logo {
+	background-image: url("../images/lineup.gif");
+}
+#photos #logo {
+	background-image: url("../images/basshead.gif");
+}
+#live #logo {
+	background-image: url("../images/bassist.gif");
+}
+#contact #logo {
+	background-image: url("../images/drummer.gif");
+}
+
+header nav {
+	/*width: 100%;*/ 
+	background-color: #658;
+	height: 2.4em;
+	padding-left: 20%;
+}
+
+header nav ul li{
+	float: left;
+	list-style: none;
+	border-left: solid 1px #777;
+}
+
+header nav a:link, header nav a:visited {
+	display: block;
+	width: 7em;
+	text-align: center;
+	font: 1.2em/2em Helvetica, sans-serif;
+	color: #eee;
+	text-decoration: none;
+	height: 2em;
+}
+
+header nav a:hover {
+	background-color: #87b;
+}w
+
+header nav a:active {
+	background-color: #87b;	
+}
+
+header nav a.here, header nav a.hover, header nav a.active, header nav a.visited {
+	background-color: #87a;
+}
+
+/* home */
+
+#intro a {
+	color: #222333;
+	font: italic 1em Helvetica, sans-serif;
+}
+
+#slideshow {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	overflow: hidden;
+	margin: 3em 1em;
+	border-radius: 19px;
+}
+#preview {
+	position: absolute;
+}
+
+/* about */
+
+#about article nav li {
+	list-style: none;
+	border-left: solid 4px #558; 
+	padding: 2px 5px;
+}
+
+#about article nav li a:link, #about article nav li a:active, #about article nav li a:visited {
+	text-decoration: underline;
+	color: #333;
+	font: normal 1.2em Helvetica, sans-serif;
+}
+
+#about article nav li a:hover {
+	color: #111;
+	font-weight: bold;
+}
+
+#about article h2 {
+	/*margin: 1em 0;*/
+	background-color: #F0F1F4;
+	padding: .3em;
+	color: #333;
+}
+
+#about article section {
+	border: solid 2px #eee;
+	/*padding: 1em;*/
+	margin: 1em 0;
+}
+
+#about article section p {
+	margin: 1em .5em;
+	text-indent: 1em;
+}
+
+/* photos */
+
+#photos #imagegallery {
+	background-color: #fefefe;
+	width: 481px;
+	padding: 10px 10px 5px;
+	word-spacing: -5px;
+	border: solid 4px #eee;
+	border-radius: 3px;
+	margin: 1em;
+}
+
+#photos #description {
+	display: block;
+	margin: .3em 1em .8em;
+	height: 2em;
+	background-color: #445;
+	color: #eee;
+	width: 15em;
+	text-align: center;
+	border-radius: 1em;
+	font: lighter 1.2em/2em Helvetica;
+}
+
+#photos #placeholder {
+	margin: 0 10px;
+}
+
+#photos #imagegallery li {
+	display: inline-block;
+	margin: 0 10px;
+	/*border-radius: 5px;*/
+}
+ 
+#photos #imagegallery img {
+	border-radius: 7px;
+}
+
+/* live */
+
+#live table {
+	border-collapse: collapse;
+	margin: 0 1em;
+}
+
+#live table td, #live table th {
+	border: solid 1px #ccc;
+	padding: 5px;
+}
+
+#live table tr {
+	background-color: #eee;
+}
+
+#live table th {
+	background-color: #bbb;
+}
+
+#live table tr.odd {
+	background-color: #e2e2e2;
+}
+
+/* contact */
+
+#contact fieldset {
+	border: none;
+	background-color: #fcfcfc;
+	width: 30em;
+	padding: 2em;
+	border-radius: 7px;
+	color: #333;
+}
+
+#contact label {
+	display: block;
+	font: 1em/1.5 Helvetica, sans-serif;
+	color: #555;
+}
+
+#contact input {
+	background-color: #f1f1f1;
+	border: solid 1px #ccc;
+	border-radius: 0.3em;
+	padding: .3em;
+	font-size: 1.1em;
+	line-height: 1.4em;
+	width: 15em;
+	height: 1.4em;
+}
+#contact input:focus {
+	border: solid 2px #3297D4;
+	outline: none;
+	background-color: #fefefe;
+}
+#contact form p {
+	min-height: 5em;
+}
+#contact form textarea {
+	width: 25em;
+	height: 12em;
+	font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: .5em;
+	border-radius: 5px;
+	border: solid 1px #ccc;
+	background-color: #f1f1f1;
+}
+#contact form textarea:focus {
+	background-color: #fefefe;
+	outline: none;
+	border: solid 2px #3297D4;
+}
+#contact form input[type="submit"] {
+	height: 2.3em;
+	margin: .5em;
+	width: 8em;
+	border: none;
+	background-color: #769;
+	color: #eee;
+	font: 1.2em/2.3em Arial, sans-serif;
+	padding: 0;
+	cursor: pointer;
+}
+
+#contact form input[type="submit"]:hover, #contact form input[type="submit"]:active {
+	background-color: #548;
+}
